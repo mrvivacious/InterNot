@@ -1,0 +1,36 @@
+{
+  "manifest_version": 2,
+
+  "name": "InterNot! DEV",
+  "description": "Stay off the internet 4ever.",
+  "version": "0.0.0.1",
+  "author": "Vivek Bhookya",
+
+  "browser_action": {
+    "default_icon": "icons/interNot-48.png",
+    "default_popup": "popup.html",
+    "default_title": "InterNot!"
+  },
+
+  "icons": { "16": "icons/interNot-16.png",
+             "48": "icons/interNot-48.png",
+             "128": "icons/interNot-128.png" },
+
+  "background": {
+      "scripts": ["interNot.js"],
+      "persistent": false
+      },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["interNot.js"],
+      "run_at": "document_start"
+    }
+  ],
+
+  "permissions": [
+    "activeTab"
+  ]
+}
+
