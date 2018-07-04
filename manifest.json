@@ -7,15 +7,15 @@
   "author": "Vivek Bhookya",
 
   "browser_action": {
-    "default_icon": "icons/icon-48.png",
-    "default_popup": "interNot.html",
+    "default_icon": "icons/interNot_icon.png",
+    "default_popup": "popup.html",
     "default_title": "InterNot!"
   },
 
-/*  "icons": { "16": "icons/interNot-16.png",
-             "48": "icons/interNot-48.png",
-             "128": "icons/interNot-128.png" },
-*/
+ "icons": { "16": "icons/interNot_icon_16.png",
+             "48": "icons/interNot_icon_48.png",
+             "128": "icons/interNot_icon_128.png" },
+
   "background": {
       "scripts": ["interNot.js"],
       "persistent": false
@@ -33,4 +33,3 @@
     "activeTab"
   ]
 }
-
