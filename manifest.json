@@ -3,7 +3,7 @@
 
   "name": "InterNot! DEV",
   "description": "Stay off the internet 4ever.",
-  "version": "0.0.0.1",
+  "version": "0.0.1.0",
   "author": "Vivek Bhookya",
 
   "browser_action": {
